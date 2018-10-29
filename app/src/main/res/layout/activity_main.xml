@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nitin.sqlitedemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add a new Employee"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edt_employeename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Employee Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="6dp"
+            android:text="Select Department" />
+
+        <Spinner
+            android:id="@+id/spin_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/department">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edt_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Enter Employee Salary"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_addnewemployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Add Employee"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_viewemployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="View Employees"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
